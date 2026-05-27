@@ -1,0 +1,66 @@
+
+[
+  {
+    "id": 1,
+    "title": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
+    "description": "Projet d’intégration HTML/CSS consistant à transformer une maquette en site web fonctionnel. Le site est responsive et respecte fidèlement le design fourni (via Figma).",
+    "stack": ["HTML5", "CSS3","Responsive Design", "Figma", "Git/Github"],
+    "github": "https://github.com/Bombe18/booki",
+    "demo": "",
+    "image": "https://via.placeholder.com/400x300"
+  },
+  {
+    "id": 2,
+    "title": "Créez une page web dynamique avec JavaScript",
+    "description": "Développement d’un site web dynamique en JavaScript. Le projet inclut la gestion des événements utilisateurs, des formulaires interactifs et des appels API pour afficher et manipuler les données.",
+    "stack": ["JavaScript", "Formulaires", "API REST"],
+    "github": "https://github.com/Bombe18/sophie-bluel",
+    "demo": "",
+    "image": "https://via.placeholder.com/400x300"
+  },
+  {
+    "id": 3,
+    "title": "Débuggez et optimisez un site de photographe",
+    "description": "Projet d’optimisation et de qualité web. Il consiste à améliorer les performances, le SEO et l’accessibilité d’un site existant, avec audits (Lighthouse, Wave), corrections du code et cahier de recette.",
+    "stack": ["Lighthouse", "Wave", "Chrome DevTools", "SEO", "Accessibilité" ],
+    "github": "https://github.com/Bombe18/Nina-Carducci-Dev-master",
+    "demo": "",
+    "image": "https://via.placeholder.com/400x300"
+  },
+  {
+    "id": 4,
+    "title": "Créez une application web de location immobilière avec React",
+    "description": "Création d’une application front-end en React. Le projet met en œuvre des composants React, la navigation avec React Router et une architecture moderne pour une interface utilisateur dynamique",
+    "stack": ["React", "Sass"],
+    "github": "https://github.com/Bombe18/Kasa",
+    "demo": "",
+    "image": "https://via.placeholder.com/400x300"
+  },
+  {
+    "id": 5,
+    "title": "Développez le back-end d'un site de notation de livres",
+    "description": "Développement du back-end d’une application avec Node.js, Express et MongoDB. Le projet inclut la modélisation des données, l’authentification sécurisée et les opérations CRUD via une API REST.",
+    "stack": ["Node.js", "Express", "MongoDB", "Mongoose", "JWT", "Bcrypt"],
+    "github": "https://github.com/Bombe18/Dev-Web-livres-main",
+    "demo": "",
+    "image": "https://via.placeholder.com/400x300"
+  }  ,
+  {
+    "id": 6,
+    "title": "Planifiez le développement du site de votre client",
+    "description": "Projet de gestion de projet web. Il porte sur la rédaction de spécifications techniques, la présentation de la solution technique, la mise en place d’un suivi de projet (Kanban) et d’une veille technologique.",
+    "stack": ["Notion.io", "Veille technologique", "Rédaction de spécifications techniques", "Kanban", "Méthodologie Agile"],
+    "github": "#",
+    "demo": "",
+    "image": "https://via.placeholder.com/400x300"
+  },
+  {
+    "id": 7,
+    "title": "Créez et publiez votre portfolio de développeur",
+    "description": "Création et déploiement d’un portfolio personnel. Le site présente les projets réalisés et est mis en ligne via GitHub Pages, servant de vitrine professionnelle.",
+    "stack": ["React", "CSS", "JavaScript"],
+    "github": "https://github.com/Bombe18/PortFolio",
+    "demo": "",
+    "image": "https://via.placeholder.com/400x300"
+  }
+]
