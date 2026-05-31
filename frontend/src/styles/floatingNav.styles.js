@@ -1,12 +1,6 @@
-/**
- * floatingNav.styles.js
- * 100% Tailwind — aucun fichier CSS custom requis.
- * Import : import { floatingNav as s } from "../styles/floatingNav.styles.js";
- */
-
 export const floatingNav = {
   // ─── Conteneur racine ─────────────────────────────────────────────────────
-  root: "fixed right-6 top-1/2 -translate-y-1/2 flex flex-col items-center z-50",
+ mainNav: "fixed left-[50px] top-1/2 -translate-y-1/2 flex flex-col items-center z-50",
 
   // ─── SVG décoratif ────────────────────────────────────────────────────────
   svg: "absolute top-0 left-1/2 -translate-x-1/2 pointer-events-none",
@@ -36,12 +30,9 @@ export const floatingNav = {
   ],
 
   // ─── Tooltip ──────────────────────────────────────────────────────────────
-  // left:100% + margin → left-full ml-2.5
-  // backdrop-filter blur(8px) → backdrop-blur-sm
-  // sélecteur .group:hover géré par Tailwind : group-hover:opacity-100
-  tooltip: [
-    "absolute left-full ml-2.5",
-    
+   tooltip: [
+    "absolute left-full ml-[10px]",
+    "pl-[10px] pr-[10px]",
     "text-xs font-medium whitespace-nowrap",
     "text-[#e0e7ff]",
     "bg-[rgba(15,23,42,0.9)]",
@@ -50,7 +41,7 @@ export const floatingNav = {
     "opacity-0 group-hover:opacity-100",
     "transition-opacity duration-200",
     "pointer-events-none",
-    "px-2 py-1 rounded-xl",
+    "rounded-full",
   ].join(" "),
 
   // ─── Bouton ───────────────────────────────────────────────────────────────
@@ -59,8 +50,6 @@ export const floatingNav = {
   btnSizeDefault: "w-[44px] h-[44px]",
 
   // État inactif
-  // box-shadow: 0 4px 12px rgba(0,0,0,0.4) → shadow-[0_4px_12px_rgba(0,0,0,0.4)]
-  // backdrop-filter blur(12px) → backdrop-blur-md
   btnDefault: [
     "bg-[rgba(15,23,42,0.85)]",
     "border border-[rgba(99,102,241,0.25)] border-[1.5px]",
@@ -70,8 +59,6 @@ export const floatingNav = {
   ].join(" "),
 
   // État actif
-  // background-image gradient → bg-[linear-gradient(...)]
-  // box-shadow multi-couches → shadow-[0_0_18px_...,inset_0_0_12px_...]
   btnActive: [
     "border-[1.5px] border-[rgba(139,92,246,0.8)]",
     "text-[#a5b4fc]",
