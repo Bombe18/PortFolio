@@ -1,20 +1,42 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { floatingNav as s } from "../styles/floatingNav.styles.js";
 
 const navItems = [
-  { id: "home",    iconClass: "fa-solid fa-house",    label: "Accueil" },
-  { id: "profile", iconClass: "fa-solid fa-user",     label: "Profil"  },
-  { id: "code",    iconClass: "fa-solid fa-code",     label: "Code"    },
-  { id: "work",    iconClass: "fa-solid fa-briefcase",label: "Projets" },
-  { id: "mail",    iconClass: "fa-solid fa-envelope", label: "Contact" },
+  { id: "home",    target: "home",        iconClass: "fa-solid fa-house",    label: "Accueil" },
+  { id: "profile", target: "about",       iconClass: "fa-solid fa-user",     label: "Profil"  },
+  { id: "code",    target: "competences", iconClass: "fa-solid fa-code",     label: "Compétences" },
+  { id: "work",    target: "projects",    iconClass: "fa-solid fa-briefcase",label: "Projets" },
+  { id: "mail",    target: "contact",     iconClass: "fa-solid fa-envelope", label: "Contact" },
 ];
 
 export default function FloatingNav() {
   const [active, setActive] = useState("home");
   const [open, setOpen] = useState(true);
 
+  useEffect(() => {
+    const sections = navItems
+      .map((n) => document.getElementById(n.target))
+      .filter(Boolean);
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            const item = navItems.find((n) => n.target === id);
+            if (item) setActive(item.id);
+          }
+        });
+      },
+      { root: null, rootMargin: '0px', threshold: 0.6 }
+    );
+
+    sections.forEach((sct) => io.observe(sct));
+    return () => io.disconnect();
+  }, []);
+
   return (
-    <div className={s.root}>
+    <div className={s.mainNav}>
       {/* ── Ligne décorative SVG ────────────────────────────────────────── */}
       {open && (
         <svg
@@ -57,16 +79,13 @@ export default function FloatingNav() {
             >
               {/* Tooltip */}
               {open && (
-                console.log("tooltip class:", s.tooltip),
-                <span className={s.tooltip}>
-                  
-                  {item.label}
-                </span>
+                <span className={s.tooltip}>{item.label}</span>
               )}
-
-              {/* Bouton */}
+              {/* Bouton qui scrolle vers la section */}
               <button
                 onClick={() => {
+                  const el = document.getElementById(item.target);
+                  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   setActive(item.id);
                   if (isFirst) setOpen((prev) => !prev);
                 }}
@@ -82,7 +101,7 @@ export default function FloatingNav() {
                 <i className={`${item.iconClass} text-lg`} aria-hidden="true" />
               </button>
             </div>
-          );
+          )
         })}
       </div>
     </div>
