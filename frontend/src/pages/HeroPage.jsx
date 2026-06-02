@@ -3,12 +3,12 @@ import { useEffect, useRef } from "react";
 
 export default function HeroPage() {
   return (
-    <section >
+    <section className="flex min-h-screen flex-col justify-center items-center">
 
       <div className="relative z-10 flex flex-col items-center text-center px-6">
 
-        <h1 className="inline-block mb-4 bg-[linear-gradient(to_right,_rgb(103,_232,_249),_rgb(167,_139,_250),_rgb(232,_121,_249))] bg-clip-text text-transparent text-7xl font-bold leading-none">
-          Alex Durand
+        <h1 className="inline-block mb-4 bg-[linear-gradient(to_right,rgb(103,232,249),rgb(167,139,250),rgb(232,121,249))] bg-clip-text text-transparent text-7xl font-bold leading-none">
+          Cyril Colin
         </h1>
 
         <p className="mb-4 text-[#cbd5e1] text-2xl font-medium tracking-wide leading-8">
