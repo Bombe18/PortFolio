@@ -1,56 +1,110 @@
 [
   {
+    "id": 1,
     "name": "HTML5",
     "level": 90,
-    "category": "frontend",
-    "icon": "/src/images/HTML5.png"
+    "category": "Frontend",
+    "icon": "/src/images/HTML5.png",
+    "color": {
+      "from": "from-orange-500",
+      "to": "to-red-500",
+      "glow": "rgba(249,115,22,0.6),0_0_18px_4px_rgba(239,68,68,0.3)"
+    }
   },
   {
+    "id": 2,
     "name": "CSS3",
     "level": 85,
-    "category": "frontend",
-    "icon": "/src/images/CSS3.png"
+    "category": "Frontend",
+    "icon": "/src/images/CSS3.png",
+    "color": {
+      "from": "from-blue-500",
+      "to": "to-sky-400",
+      "glow": "rgba(59,130,246,0.6),0_0_18px_4px_rgba(56,189,248,0.3)"
+    }
   },
   {
+    "id": 3,
     "name": "JavaScript ES6+",
     "level": 80,
-    "category": "frontend",
-    "icon": "/src/images/javascript.png"
+    "category": "Frontend",
+    "icon": "/src/images/javascript.webp",
+    "color": {
+      "from": "from-yellow-400",
+      "to": "to-amber-300",
+      "glow": "rgba(250,204,21,0.6),0_0_18px_4px_rgba(252,211,77,0.3)"
+    }
   },
   {
+    "id": 4,
     "name": "React",
     "level": 75,
-    "category": "frontend",
-    "icon": "/src/images/react.png"
+    "category": "Frontend",
+    "icon": "/src/images/react.png",
+    "color": {
+      "from": "from-cyan-400",
+      "to": "to-blue-500",
+      "glow": "rgba(34,211,238,0.6),0_0_18px_4px_rgba(59,130,246,0.3)"
+    }
   },
   {
+    "id": 5,
     "name": "Git/GitHub",
     "level": 70,
-    "category": "tools",
-    "icon": "/src/images/github.png"
+    "category": "Tools",
+    "icon": "/src/images/github.png",
+    "color": {
+      "from": "from-gray-400",
+      "to": "to-gray-600",
+      "glow": "rgba(156,163,175,0.6),0_0_18px_4px_rgba(107,114,128,0.3)"
+    }
   },
   {
+    "id": 6,
     "name": "Responsive Design",
     "level": 85,
-    "category": "frontend",
-    "icon": "/src/images/responsive.png"
+    "category": "Frontend",
+    "icon": "/src/images/responsive.png",
+    "color": {
+      "from": "from-green-400",
+      "to": "to-emerald-500",
+      "glow": "rgba(34,197,94,0.6),0_0_18px_4px_rgba(16,185,129,0.3)"
+    }
   },
   {
+    "id": 7,
     "name": "Accessibilité",
     "level": 80,
-    "category": "frontend",
-    "icon": "/src/images/accessibility-icon.webp"
+    "category": "Frontend",
+    "icon": "/src/images/accessibility-icon.webp",
+    "color": {
+      "from": "from-yellow-400",
+      "to": "to-lime-500",
+      "glow": "rgba(253,224,71,0.6),0_0_18px_4px_rgba(132,204,22,0.3)"
+    }
   },
   {
+    "id": 8,
     "name": "SEO",
     "level": 65,
-    "category": "frontend",
-    "icon": "/src/images/seo.png"
+    "category": "Frontend",
+    "icon": "/src/images/seo.png",
+    "color": {
+      "from": "from-yellow-300",
+      "to": "to-yellow-600",
+      "glow": "rgba(253,224,71,0.6),0_0_18px_4px_rgba(202,138,4,0.3)"
+    }
   },
   {
+    "id": 9,
     "name": "node.js",
     "level": 65,
-    "category": "frontend",
-    "icon": "/src/images/nodejs.webp"
+    "category": "Backend",
+    "icon": "/src/images/nodejs.webp",
+    "color": {
+      "from": "from-green-400",
+      "to": "to-green-600",
+      "glow": "rgba(34,197,94,0.6),0_0_18px_4px_rgba(5,150,105,0.3)"
+    }
   }
 ]
