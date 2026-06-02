@@ -12,7 +12,7 @@ function App() {
     <div>
       <ParticlesBackground />
       <FloatingNav />
-      <div className={mainStyles.mainContainer}>
+      <div>
         <HeroPage />
         <Aboutpage />
         <Competencespage />
