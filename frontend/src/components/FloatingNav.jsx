@@ -37,7 +37,7 @@ export default function FloatingNav() {
 
   return (
     <div className={s.mainNav}>
-      {/* ── Ligne décorative SVG ────────────────────────────────────────── */}
+      {/*Ligne décorative SVG */}
       {open && (
         <svg
           className={s.svg}
@@ -63,7 +63,7 @@ export default function FloatingNav() {
         </svg>
       )}
 
-      {/* ── Liste des items ──────────────────────────────────────────────── */}
+      {/*Liste des items*/}
       <div className={s.list}>
         {navItems.map((item, i) => {
           const isActive  = active === item.id;
@@ -71,6 +71,11 @@ export default function FloatingNav() {
           const translateClass = open ? s.translateClasses[i] : "translate-x-0";
           const delayClass     = s.delayClasses[i];
           const opacityClass   = open || isFirst ? s.itemVisible : s.itemHidden;
+          const iconClass      = isFirst
+            ? open
+              ? "fa-solid fa-house"
+              : "fa-solid fa-bars"
+            : item.iconClass;
 
           return (
             <div
@@ -81,13 +86,24 @@ export default function FloatingNav() {
               {open && (
                 <span className={s.tooltip}>{item.label}</span>
               )}
-              {/* Bouton qui scrolle vers la section */}
+              {/* Bouton de navigation */}
               <button
                 onClick={() => {
+                  if (isFirst) {
+                    if (!open) {
+                      setOpen(true);
+                      return;
+                    }
+                    if (active === item.id) {
+                      setOpen(false);
+                      return;
+                    }
+                  }
+                  
+                  {/*Scroller vers la section**/}
                   const el = document.getElementById(item.target);
                   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   setActive(item.id);
-                  if (isFirst) setOpen((prev) => !prev);
                 }}
                 className={[
                   s.btnBase,
@@ -98,7 +114,7 @@ export default function FloatingNav() {
               >
                 {isActive && <span className={s.activeRing} />}
                 {isFirst  && <span className={s.firstRing}  />}
-                <i className={`${item.iconClass} text-lg`} aria-hidden="true" />
+                <i className={`${iconClass} text-lg`} aria-hidden="true" />
               </button>
             </div>
           )
