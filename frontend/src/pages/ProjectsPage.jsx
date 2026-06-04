@@ -1,8 +1,38 @@
+import { useState } from "react";
+import projects from "../data/projectsData.json"
+
+
 export default function projectsPage() {
+  const [hoveredId, setHoveredId] = useState(null);
+
   return (
-    <div>
-      <h1>Projects Page</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software including versions of Lorem Ipsum.</p>
-    </div>
+  
+    <section className="flex min-h-screen flex-col justify-center ml-24 mr-24">
+      <h2 className="text-5xl mt-20 md:text-6xl font-bold mb-6 bg-[linear-gradient(to_right,rgb(103,232,249),rgb(167,139,250),rgb(232,121,249))] bg-clip-text text-transparent text-left w-fit">
+        Projets
+      </h2>
+      <div className="h-1 w-32 bg-linear-to-r from-cyan-500 to-violet-500 mb-12 rounded-full" />
+
+
+      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-8">
+        {projects.map((project) => (
+          <a key={project.id} href={project.github} target="_blank" rel="noopener noreferrer" 
+             className="bg-slate-900/50 backdrop-blur-sm border border-violet-500/30 rounded-3xl shadow-lg cursor-pointer hover:border-cyan-400/50 transition-all hover:scale-105 hover:-translate-y-2 duration-200  "
+             onMouseEnter={() => setHoveredId(project.id)}
+             onMouseLeave={() => setHoveredId(null)}>
+            <article>
+              <div className="relative">
+              <img src={project.image} alt={`${project.name} image`} className="w-full h-48 object-cover rounded-t-3xl mb-4" />
+              {hoveredId === project.id && (
+                <img src="/src/images/Github.png" alt="GitHub repository" className="absolute bottom-6 left-4 w-10 h-10 opacity-90" />
+              )}
+              </div>
+              <h3 className="text-2xl font-semibold mb-3 text-gray-100 hover:text-cyan-400 transition-colors m-4">{project.title}</h3>
+              <p className="text-gray-400 p-4">{project.description}</p>
+            </article>
+          </a>
+        ))}
+      </div>
+    </section>
   );
 }

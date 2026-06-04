@@ -14,7 +14,7 @@ export default function AboutPage() {
 
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <article className="relative bg-slate-900/50 backdrop-blur-sm border border-violet-500/30 rounded-2xl p-6 overflow-hidden hover:scale-105 hover:-translate-y-2 transition-transform duration-200 ">
-          <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-500 mb-4`}><i class="fa-solid fa-code" aria-hidden="true"  ></i></div>
+          <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-500 mb-4`}><i className="fa-solid fa-code" aria-hidden="true"  ></i></div>
           <h3 className="text-xl font-semibold mb-2 text-gray-100">
             Développement
           </h3>
@@ -22,7 +22,7 @@ export default function AboutPage() {
         </article>
 
         <article className="relative bg-slate-900/50 backdrop-blur-sm border border-violet-500/30 rounded-2xl p-6 overflow-hidden hover:scale-105 hover:-translate-y-2 transition-transform duration-200  "  >
-          <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br from-violet-500 to-violet-400 mb-4`}><i class="fa-solid fa-paint-roller" aria-hidden="true"  ></i></div>
+          <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br from-violet-500 to-violet-400 mb-4`}><i className="fa-solid fa-paint-roller" aria-hidden="true"  ></i></div>
           <h3 className="text-xl font-semibold mb-2 text-gray-100">
             Design
           </h3>
@@ -30,7 +30,7 @@ export default function AboutPage() {
         </article>
 
         <article className="relative bg-slate-900/50 backdrop-blur-sm border border-violet-500/30 rounded-2xl p-6 overflow-hidden hover:scale-105 hover:-translate-y-2 transition-transform duration-200">
-          <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br from-emerald-400 to-green-500 mb-4`}><i class="fa-solid fa-tachometer-alt" aria-hidden="true"  ></i></div>
+          <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br from-emerald-400 to-green-500 mb-4`}><i className="fa-solid fa-tachometer-alt" aria-hidden="true"  ></i></div>
           <h3 className="text-xl font-semibold mb-2 text-gray-100">
             Performance
           </h3>
@@ -38,7 +38,7 @@ export default function AboutPage() {
         </article>
 
         <article className="relative bg-slate-900/50 backdrop-blur-sm border border-violet-500/30 rounded-2xl p-6 overflow-hidden hover:scale-105 hover:-translate-y-2 transition-transform duration-200">
-          <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br from-fuchsia-400 to-pink-500 mb-4`}><i class="fa-solid fa-users" aria-hidden="true"  ></i></div>
+          <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br from-fuchsia-400 to-pink-500 mb-4`}><i className="fa-solid fa-users" aria-hidden="true"  ></i></div>
           <h3 className="text-xl font-semibold mb-2 text-gray-100">
             Collaboration
           </h3>

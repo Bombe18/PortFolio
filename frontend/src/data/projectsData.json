@@ -7,7 +7,7 @@
     "stack": ["HTML5", "CSS3","Responsive Design", "Figma", "Git/Github"],
     "github": "https://github.com/Bombe18/booki",
     "demo": "",
-    "image": "https://via.placeholder.com/400x300"
+    "image": "/src/images/Booki.png"
   },
   {
     "id": 2,
@@ -16,7 +16,7 @@
     "stack": ["JavaScript", "Formulaires", "API REST"],
     "github": "https://github.com/Bombe18/sophie-bluel",
     "demo": "",
-    "image": "https://via.placeholder.com/400x300"
+    "image": "/src/images/Sophie-Bluel.png"
   },
   {
     "id": 3,
@@ -25,7 +25,7 @@
     "stack": ["Lighthouse", "Wave", "Chrome DevTools", "SEO", "Accessibilité" ],
     "github": "https://github.com/Bombe18/Nina-Carducci-Dev-master",
     "demo": "",
-    "image": "https://via.placeholder.com/400x300"
+    "image": "/src/images/Nina-Carducci.png"
   },
   {
     "id": 4,
@@ -34,7 +34,7 @@
     "stack": ["React", "Sass"],
     "github": "https://github.com/Bombe18/Kasa",
     "demo": "",
-    "image": "https://via.placeholder.com/400x300"
+    "image": "/src/images/Kasa.png"
   },
   {
     "id": 5,
@@ -43,7 +43,7 @@
     "stack": ["Node.js", "Express", "MongoDB", "Mongoose", "JWT", "Bcrypt"],
     "github": "https://github.com/Bombe18/Dev-Web-livres-main",
     "demo": "",
-    "image": "https://via.placeholder.com/400x300"
+    "image": "/src/images/MonVieuxGrimoire.png"
   }  ,
   {
     "id": 6,
@@ -52,7 +52,7 @@
     "stack": ["Notion.io", "Veille technologique", "Rédaction de spécifications techniques", "Kanban", "Méthodologie Agile"],
     "github": "#",
     "demo": "",
-    "image": "https://via.placeholder.com/400x300"
+    "image": "/src/images/Qwenta.png"
   },
   {
     "id": 7,
@@ -61,6 +61,6 @@
     "stack": ["React", "CSS", "JavaScript"],
     "github": "https://github.com/Bombe18/PortFolio",
     "demo": "",
-    "image": "https://via.placeholder.com/400x300"
+    "image": "/src/images/PortFolio.png"
   }
 ]

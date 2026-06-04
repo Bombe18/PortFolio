@@ -16,7 +16,7 @@ export default function CompetencesPages() {
                 <img src={competence.icon} alt={`${competence.name} icon`} className="w-fit h-6 flex-shrink-0" />
                 <h3 className="line-clamp-2">{competence.name}</h3>
               </div>
-              <span className="flex-shrink-0 ml-4">{competence.level}%</span>
+              <span className="shrink-0 ml-4">{competence.level}%</span>
             </div>
 
             {/* Track */}
@@ -24,13 +24,12 @@ export default function CompetencesPages() {
 
               {/* Barre de progression */}
               <div
-                style={{ '--w': `${competence.level}%` }}
-                className={`w-[var(--w)] relative h-full rounded-full bg-gradient-to-r ${competence.color.from} ${competence.color.to} transition-all duration-300 group-hover:shadow-[0_0_8px_2px_rgba(99,102,241,0.6),0_0_18px_4px_rgba(103,232,249,0.3)]`}
+                className={`w-[${competence.level}%] relative h-full rounded-full bg-linear-to-r ${competence.color.from} ${competence.color.to} transition-all duration-300 group-hover:shadow-[0_0_8px_2px_rgba(99,102,241,0.6),0_0_18px_4px_rgba(103,232,249,0.3)]`}
               />
 
               {/* Shimmer */}
               <span
-                className="absolute inset-0 w-[100%] bg-gradient-to-r from-transparent via-white/40 to-transparent rounded-full opacity-0 group-hover:opacity-100 animate-shimmer"
+                className="absolute inset-0 w-full bg-linear-to-r from-transparent via-white/40 to-transparent rounded-full opacity-0 group-hover:opacity-100 animate-shimmer"
               />
 
             </div>
