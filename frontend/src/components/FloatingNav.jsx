@@ -20,15 +20,17 @@ export default function FloatingNav() {
 
     const io = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const id = entry.target.id;
-            const item = navItems.find((n) => n.target === id);
-            if (item) setActive(item.id);
-          }
-        });
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+        if (visible.length > 0) {
+          const id = visible[0].target.id;
+          const item = navItems.find((n) => n.target === id);
+          if (item) setActive(item.id);
+        }
       },
-      { root: null, rootMargin: '0px', threshold: 0.6 }
+      { root: null, rootMargin: '0px', threshold: [0.25, 0.5, 0.75] }
     );
 
     sections.forEach((sct) => io.observe(sct));
