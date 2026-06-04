@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 @import "tailwindcss";
+@source inline("w-[{0..100..5}%]");
 
-/* You can add custom styles below */
-html, body /*#root*/ {
-  height: 100%;
+/* Shimmer effect */
+@keyframes shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(250%); }
+}
+
+
+ 
+.animate-shimmer {
+  animation: shimmer 1.4s ease-in-out infinite;
 }
