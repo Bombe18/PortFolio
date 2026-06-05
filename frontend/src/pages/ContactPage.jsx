@@ -17,8 +17,8 @@ export default function ContactPage() {
   };
 
   return (
-    <section className="flex min-h-screen flex-col justify-center ml-24 mr-24 mt-20">
-      <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-[linear-gradient(to_right,rgb(103,232,249),rgb(167,139,250),rgb(232,121,249))] bg-clip-text text-transparent text-left w-fit">
+    <section className="flex min-h-screen flex-col justify-center px-6 sm:px-10 md:px-28 ">
+      <h2 className="text-5xl md:text-6xl mt-6 font-bold mb-6 bg-[linear-gradient(to_right,rgb(103,232,249),rgb(167,139,250),rgb(232,121,249))] bg-clip-text text-transparent text-left w-fit">
         Contact
       </h2>
       <div className="h-1 w-32 bg-linear-to-r from-cyan-500 to-violet-500 mb-12 rounded-full" />
@@ -59,7 +59,7 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6 bg-slate-900/70 p-8 rounded-3xl border border-violet-500/30 shadow-lg">
+        <form onSubmit={handleSubmit} className="space-y-6 bg-slate-900/70 p-8 rounded-3xl border border-violet-500/30 shadow-lg mb-20">
           <label className="block">
             <span className="text-lg font-medium text-gray-300 mb-2">Nom</span>
             <input

@@ -70,4 +70,52 @@ export const floatingNav = {
   // ─── Anneaux décoratifs ───────────────────────────────────────────────────
   activeRing: "absolute inset-0 rounded-full animate-ping bg-[rgba(167,139,250,0.2)]",
   firstRing:  "absolute inset-[-5px] rounded-full pointer-events-none border border-[rgba(99,102,241,0.2)]",
+
+
+ /* ══════════════════════════════════════════════
+     MOBILE  –  barre fixe en bas
+  ══════════════════════════════════════════════ */
+
+  // Conteneur principal
+  mobileNav: [
+    "fixed bottom-0 left-0 right-0 z-50",
+    "flex items-center justify-around",
+    "px-2 pb-[env(safe-area-inset-bottom,0px)]",
+    "h-[64px]",
+    "bg-[rgba(10,5,32,0.92)]",
+    "backdrop-blur-xl",
+    "border-t border-[rgba(99,102,241,0.2)]",
+  ].join(" "),
+
+  // Ligne dégradée tout en haut du conteneur
+  mobileLine: [
+    "absolute top-0 left-4 right-4 h-[1px]",
+    "bg-[linear-gradient(to_right,transparent,rgba(139,92,246,0.6),rgba(103,232,249,0.6),transparent)]",
+    "pointer-events-none",
+  ].join(" "),
+
+  // Bouton individuel
+  mobileBtnBase: [
+    "relative flex flex-col items-center justify-center gap-[3px]",
+    "flex-1 h-full",
+    "transition-all duration-300",
+    "active:scale-90",
+  ].join(" "),
+
+  mobileBtnDefault: "text-[#6366f1]",
+
+  mobileBtnActive: [
+    "text-[#a5b4fc]",
+  ].join(" "),
+
+  // Label sous l'icône
+  mobileBtnLabel: "text-[10px] font-medium leading-none tracking-wide",
+
+  // Halo animate-ping sur le bouton actif
+  mobileActiveRing: [
+    "absolute inset-[6px] rounded-full",
+    "bg-[radial-gradient(circle,rgba(139,92,246,0.25)_0%,transparent_70%)]",
+    "animate-ping",
+    "pointer-events-none",
+  ].join(" "),
 };
