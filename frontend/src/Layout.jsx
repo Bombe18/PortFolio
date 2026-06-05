@@ -14,12 +14,11 @@ export default function Layout() {
 
   useEffect(() => {
     // Determine target id from pathname
-    const path = location.pathname === '/' ? '/': location.pathname
+    const path = location.pathname === '/' ? '/' : location.pathname
     const id = path === '/' ? 'home' : path.replace(/^\//, '')
     const el = document.getElementById(id)
     if (el) {
-      // use replace for direct navigation (no smooth jump on initial load)
-      el.scrollIntoView({ behavior: 'auto', block: 'start' })
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
   }, [location.pathname])
 
