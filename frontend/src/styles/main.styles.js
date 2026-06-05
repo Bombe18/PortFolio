@@ -13,7 +13,9 @@ export const mainStyles = {
 
     mainContainer: [
         "mx-auto",
-        "px-[200px]",
-        "max-w-[1200px]"
+        "px-auto",
+        "max-w-[1200px]",
+                "justify-center",
+
     ].join(" "),
 };
