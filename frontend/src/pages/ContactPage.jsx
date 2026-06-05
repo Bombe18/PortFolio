@@ -8,7 +8,7 @@ export default function ContactPage() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const recipient = "votre-email@example.com";
+    const recipient = "cyrilco18@gmail.com";
     const subject = encodeURIComponent(`Contact depuis le portfolio - ${name || "Profil"}`);
     const body = encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\n${message}`);
     const mailtoUrl = `mailto:${recipient}?subject=${subject}&body=${body}`;
@@ -31,7 +31,7 @@ export default function ContactPage() {
 
           <div className="flex flex-col gap-8 text-2xl">
 
-            <a href="mailto:votre-email@example.com" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:cyrilco18@gmail.com" target="_blank" rel="noopener noreferrer">
               <div className="flex items-center gap-4 bg-slate-900/50 backdrop-blur-sm border border-violet-500/30 rounded-xl p-5 shadow-lg hover:scale-105 hover:translate-x-2 transition-transform  ">
                 <div className="bg-cyan-500 w-12 h-12 rounded-[20%] flex items-center justify-center">
                   <i className="fa fa-envelope" aria-hidden="true" />
@@ -49,7 +49,7 @@ export default function ContactPage() {
               </div>
             </a>
 
-            <a href="https://www.linkedin.com/in/cyril-bombarde/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/cyril-colin-50b47b261/" target="_blank" rel="noopener noreferrer">
               <div className="flex items-center gap-4 bg-slate-900/50 backdrop-blur-sm border border-violet-500/30 rounded-xl p-5 shadow-lg hover:scale-105 hover:translate-x-2 transition-transform  ">
                 <div className="bg-blue-500 w-12 h-12 rounded-[20%] flex items-center justify-center">
                   <i className="fa-brands fa-linkedin" aria-hidden="true" />

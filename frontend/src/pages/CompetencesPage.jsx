@@ -13,7 +13,7 @@ export default function CompetencesPages() {
 
             <div className="flex justify-between items-start mt-2 text-xl font-semibold text-gray-100 h-12">
               <div className="flex space-x-1 min-w-0">
-                <img src={competence.icon} alt={`${competence.name} icon`} className="w-fit h-6 flex-shrink-0" />
+                <img src={competence.icon} alt={`${competence.name} icon`} className="w-fit h-6 shrink-0" />
                 <h3 className="line-clamp-2">{competence.name}</h3>
               </div>
               <span className="shrink-0 ml-4">{competence.level}%</span>
