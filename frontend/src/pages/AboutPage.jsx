@@ -20,7 +20,7 @@ export default function AboutPage() {
           <p className="text-2xl font-semibold text-gray-100 leading-snug">
             Développeur web{" "}
             <span className="bg-[linear-gradient(to_right,rgb(103,232,249),rgb(167,139,250))] bg-clip-text text-transparent">
-              full-stack
+              front-end
             </span>{" "}
             passionné par les interfaces modernes.
           </p>
