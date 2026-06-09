@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import projects from "../data/projectsData.json";
 import ParticlesBackground from "../components/Background.jsx";
+import ArticleCard from "../components/ArticleCard.jsx";
 
 export default function ProjectDetailPage() {
   const { id } = useParams();
@@ -93,9 +94,9 @@ export default function ProjectDetailPage() {
 
         {/* Grille des sections principales */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-          <SectionCard
-            icon="fa-solid fa-circle-info"
-            iconColor="from-cyan-400 to-blue-500"
+          <ArticleCard
+            icon="fa-circle-info"
+            gradient="from-cyan-400 to-blue-500"
             title="Contexte"
           >
             <div className="space-y-3">
@@ -105,37 +106,38 @@ export default function ProjectDetailPage() {
                 </p>
               ))}
             </div>
-          </SectionCard>
+          </ArticleCard>
 
-          <SectionCard
-            icon="fa-solid fa-bullseye"
-            iconColor="from-violet-500 to-violet-400"
+          <ArticleCard
+            icon="fa-bullseye"
+            gradient="from-violet-500 to-violet-400"
             title="Enjeux"
+           w="1"
           >
             <BulletList items={project.stakes} />
-          </SectionCard>
+          </ArticleCard>
 
-          <SectionCard
-            icon="fa-solid fa-code"
-            iconColor="from-emerald-400 to-green-500"
+          <ArticleCard
+            icon="fa-code"
+            gradient="from-emerald-400 to-green-500"
             title="Réalisations"
           >
             <BulletList items={project.achievements} />
-          </SectionCard>
+          </ArticleCard>
 
-          <SectionCard
-            icon="fa-solid fa-chart-line"
-            iconColor="from-fuchsia-400 to-pink-500"
+          <ArticleCard
+            icon="fa-chart-line"
+            gradient="from-fuchsia-400 to-pink-500"
             title="Résultats obtenus"
           >
             <BulletList items={project.results} />
-          </SectionCard>
+          </ArticleCard>
         </div>
 
         {/* Axes d'amélioration — pleine largeur */}
-        <SectionCard
-          icon="fa-solid fa-lightbulb"
-          iconColor="from-amber-400 to-orange-500"
+        <ArticleCard
+          icon="fa-lightbulb"
+          gradient="from-amber-400 to-orange-500"
           title="Axes d'amélioration"
         >
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -143,7 +145,7 @@ export default function ProjectDetailPage() {
               <BulletItem key={i}>{item}</BulletItem>
             ))}
           </ul>
-        </SectionCard>
+        </ArticleCard>
 
         {/* Padding bas pour respirer */}
         <div className="h-16" />
@@ -152,19 +154,6 @@ export default function ProjectDetailPage() {
   );
 }
 
-function SectionCard({ icon, iconColor, title, children }) {
-  return (
-    <div className="bg-slate-900/50 backdrop-blur-sm border border-violet-500/30 rounded-2xl p-6 max-p-2">
-      <div className="flex items-center gap-3 mb-5">
-        <div className={`inline-flex p-3 rounded-xl bg-linear-to-br ${iconColor}  shrink-0`}>
-          <i className={`${icon} text-white text-sm h-5 w-5 flex justify-center`} aria-hidden="true" />
-        </div>
-        <h2 className="text-lg font-semibold text-gray-100">{title}</h2>
-      </div>
-      {children}
-    </div>
-  );
-}
 
 function BulletList({ items }) {
   return (
