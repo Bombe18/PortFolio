@@ -3,8 +3,8 @@
   {
     "id": 1,
     "title": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
-    "description": "Projet d’intégration HTML/CSS consistant à transformer une maquette en site web fonctionnel. Le site est responsive et respecte fidèlement le design fourni (via Figma).",
-    "stack": ["HTML5", "CSS3","Responsive Design", "Figma", "Git/Github"],
+    "description": "Projet d'intégration HTML/CSS consistant à transformer une maquette en site web fonctionnel. Le site est responsive et respecte fidèlement le design fourni (via Figma).",
+    "tech": ["HTML5", "CSS3","Responsive Design", "Figma", "Git/Github"],
     "github": "https://github.com/Bombe18/booki",
     "demo": "",
     "image": "/images/Booki.png",
@@ -13,18 +13,58 @@
   {
     "id": 2,
     "title": "Créez une page web dynamique avec JavaScript",
-    "description": "Développement d’un site web dynamique en JavaScript. Le projet inclut la gestion des événements utilisateurs, des formulaires interactifs et des appels API pour afficher et manipuler les données.",
-    "stack": ["JavaScript", "Formulaires", "API REST"],
+    "description": "Développement d'un site web dynamique en JavaScript. Le projet inclut la gestion des événements utilisateurs, des formulaires interactifs et des appels API pour afficher et manipuler les données.",
+    "tech": ["HTML5", "CSS3", "JavaScript (ES6+)", "Fetch API", "Node.js / Express", "bcrypt", "Multer", "Swagger", "Git / GitHub"],
     "github": "https://github.com/Bombe18/sophie-bluel",
     "demo": "",
     "image": "/images/Sophie-Bluel.png",
-    "alt": "Capture d'écran du projet Sophie Bluel, une page web dynamique réalisée en JavaScript, avec des fonctionnalités interactives et des appels API pour afficher et manipuler les données."
+    "alt": "Capture d'écran du projet Sophie Bluel, une page web dynamique réalisée en JavaScript, avec des fonctionnalités interactives et des appels API pour afficher et manipuler les données.",
+    "hasDetail": true,
+    "context": [
+      "Dans le cadre de ma mission au sein de l'agence ArchiWebos, une agence web de 50 collaborateurs, j'ai intégré une équipe en tant que développeur front-end en renfort sur un projet de site vitrine pour un architecte.",
+      "Le projet consistait à dynamiser une application existante en connectant le front-end à une API, tout en ajoutant des fonctionnalités d'administration destinées au client.",
+      "L'agence développait un site vitrine permettant de présenter les réalisations d'un architecte. Une première version statique du site existait déjà, accompagnée d'un back-end fourni (API REST). Mon rôle était d'intervenir sur la partie front-end afin de rendre le contenu dynamique, connecter l'application au back-end, et permettre à l'administrateur du site de gérer ses projets via une interface sécurisée."
+    ],
+    "stakes": [
+      "Récupérer dynamiquement les projets depuis une API grâce à JavaScript et Fetch",
+      "Afficher les travaux de l'architecte dans une galerie dynamique",
+      "Mettre en place un système de filtres par catégorie",
+      "Créer une page de connexion administrateur",
+      "Gérer l'authentification et la persistance du token",
+      "Développer une modale permettant l'ajout et la suppression de projets",
+      "Assurer une mise à jour du DOM sans rechargement de la page"
+    ],
+    "achievements": [
+      "Récupération des données depuis le back-end via Fetch",
+      "Affichage dynamique des travaux de l'architecte dans la galerie",
+      "Suppression du contenu HTML statique au profit d'un rendu 100 % dynamique",
+      "Mise en place de filtres permettant de trier les projets par catégorie",
+      "Création et intégration de la page de connexion administrateur",
+      "Gestion de l'authentification avec stockage du token",
+      "Redirection automatique vers la page d'accueil après connexion",
+      "Gestion des erreurs de connexion (identifiants incorrects)",
+      "Activation d'un mode administrateur avec injection conditionnelle de HTML",
+      "Création d'une modale : visualisation des projets, suppression de travaux existants et ajout de nouveaux projets via formulaire",
+      "Mise à jour dynamique du DOM après ajout ou suppression, sans rechargement de la page"
+    ],
+    "results": [
+      "Le site est entièrement dynamique et connecté à une API",
+      "L'administrateur peut gérer ses projets en toute autonomie",
+      "Les projets peuvent être ajoutés, supprimés et filtrés en temps réel",
+      "L'expérience utilisateur est fluide grâce aux mises à jour dynamiques",
+      "L'architecture front-end est claire, modulaire et maintenable"
+    ],
+    "improvements": [
+      "Optimisation des performances pour de grandes quantités de projets",
+      "Amélioration de l'accessibilité (ARIA, navigation clavier)",
+      "Sécurisation renforcée de la gestion des tokens"
+    ]
   },
   {
     "id": 3,
     "title": "Débuggez et optimisez un site de photographe",
-    "description": "Projet d’optimisation et de qualité web. Il consiste à améliorer les performances, le SEO et l’accessibilité d’un site existant, avec audits (Lighthouse, Wave), corrections du code et cahier de recette.",
-    "stack": ["Lighthouse", "Wave", "Chrome DevTools", "SEO", "Accessibilité" ],
+    "description": "Projet d'optimisation et de qualité web. Il consiste à améliorer les performances, le SEO et l'accessibilité d'un site existant, avec audits (Lighthouse, Wave), corrections du code et cahier de recette.",
+    "tech": ["Lighthouse", "Wave", "Chrome DevTools", "SEO", "Accessibilité" ],
     "github": "https://github.com/Bombe18/Nina-Carducci-Dev-master",
     "demo": "",
     "image": "/images/Nina-Carducci.png",
@@ -33,8 +73,8 @@
   {
     "id": 4,
     "title": "Créez une application web de location immobilière avec React",
-    "description": "Création d’une application front-end en React. Le projet met en œuvre des composants React, la navigation avec React Router et une architecture moderne pour une interface utilisateur dynamique",
-    "stack": ["React", "Sass"],
+    "description": "Création d'une application front-end en React. Le projet met en œuvre des composants React, la navigation avec React Router et une architecture moderne pour une interface utilisateur dynamique",
+    "tech": ["React", "Sass"],
     "github": "https://github.com/Bombe18/Kasa",
     "demo": "",
     "image": "/images/Kasa.png",
@@ -43,19 +83,61 @@
   {
     "id": 5,
     "title": "Développez le back-end d'un site de notation de livres",
-    "description": "Développement du back-end d’une application avec Node.js, Express et MongoDB. Le projet inclut la modélisation des données, l’authentification sécurisée et les opérations CRUD via une API REST.",
-    "stack": ["Node.js", "Express", "MongoDB", "Mongoose", "JWT", "Bcrypt"],
+    "description": "Développement du back-end d'une application avec Node.js, Express et MongoDB. Le projet inclut la modélisation des données, l'authentification sécurisée et les opérations CRUD via une API REST.",
+    "tech": ["Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "bcrypt", "Multer", "Sharp", "Git / GitHub"],
     "github": "https://github.com/Bombe18/Dev-Web-livres-main",
     "demo": "",
     "image": "/images/MonVieuxGrimoire.png",
-    "alt": "Capture d'écran du projet Mon Vieux Grimoire, une application de notation de livres avec un back-end développé en Node.js, Express et MongoDB, incluant une API REST sécurisée avec JWT et Bcrypt."
-
-  }  ,
+    "alt": "Capture d'écran du projet Mon Vieux Grimoire, une application de notation de livres avec un back-end développé en Node.js, Express et MongoDB, incluant une API REST sécurisée avec JWT et Bcrypt.",
+    "hasDetail": true,
+    "context": [
+      "Après un an d'expérience en tant que développeur back-end freelance dans la région de Lille, j'ai été sollicité par un développeur front-end avec lequel j'avais l'habitude de collaborer.",
+      "Un client souhaitait lancer un site web permettant de référencer les livres de sa chaîne de librairies et de proposer un système de notation accessible au public.",
+      "Le front-end de l'application a été développé en React, tandis que j'étais en charge de concevoir, développer et sécuriser l'API back-end destinée à alimenter l'application."
+    ],
+    "stakes": [
+      "Concevoir une API REST robuste et sécurisée",
+      "Gérer l'authentification des utilisateurs",
+      "Mettre en place un CRUD complet pour les livres",
+      "Implémenter un système de notation par utilisateur",
+      "Calculer et maintenir la note moyenne des livres",
+      "Gérer l'upload d'images de manière optimisée",
+      "Assurer la compatibilité totale avec le front-end React existant"
+    ],
+    "achievements": [
+      "Mise en place d'un serveur Node.js avec Express",
+      "Connexion et configuration d'une base de données MongoDB",
+      "Création des modèles de données avec Mongoose",
+      "Implémentation d'un CRUD complet pour les livres",
+      "Système d'authentification sécurisé : chiffrement bcrypt, tokens JWT et sécurisation des routes via middleware",
+      "Gestion de l'upload d'images avec Multer",
+      "Optimisation automatique des images avec Sharp pour réduire leur poids",
+      "Implémentation du système de notation avec prévention des doublons par utilisateur",
+      "Calcul et mise à jour dynamique de la note moyenne de chaque livre",
+      "Respect des spécifications techniques pour une intégration fluide avec le front-end React"
+    ],
+    "results": [
+      "L'API est entièrement fonctionnelle, sécurisée et documentée",
+      "Les utilisateurs peuvent s'inscrire, se connecter et ajouter des livres",
+      "Chaque livre peut être noté par les utilisateurs",
+      "La note moyenne est automatiquement recalculée et affichée",
+      "Les images sont compressées et optimisées pour réduire l'impact environnemental",
+      "L'application est stable, performante et prête à être livrée au client"
+    ],
+    "improvements": [
+      "Mise en place de tests unitaires et d'intégration",
+      "Ajout d'un système de pagination et de recherche avancée",
+      "Amélioration de la gestion des erreurs et des messages API",
+      "Mise en cache de certaines requêtes pour améliorer les performances",
+      "Ajout de rôles utilisateurs (admin / utilisateur)",
+      "Sécurisation avancée contre certaines attaques (rate limiting, sanitisation)"
+    ]
+  },
   {
     "id": 6,
     "title": "Planifiez le développement du site de votre client",
-    "description": "Projet de gestion de projet web. Il porte sur la rédaction de spécifications techniques, la présentation de la solution technique, la mise en place d’un suivi de projet (Kanban) et d’une veille technologique.",
-    "stack": ["Notion.io", "Veille technologique", "Rédaction de spécifications techniques", "Kanban", "Méthodologie Agile"],
+    "description": "Projet de gestion de projet web. Il porte sur la rédaction de spécifications techniques, la présentation de la solution technique, la mise en place d'un suivi de projet (Kanban) et d'une veille technologique.",
+    "tech": ["Notion.io", "Veille technologique", "Rédaction de spécifications techniques", "Kanban", "Méthodologie Agile"],
     "github": "#",
     "demo": "",
     "image": "/images/Qwenta.png",
@@ -64,8 +146,8 @@
   {
     "id": 7,
     "title": "Créez et publiez votre portfolio de développeur",
-    "description": "Création et déploiement d’un portfolio personnel. Le site présente les projets réalisés et est mis en ligne via GitHub Pages, servant de vitrine professionnelle.",
-    "stack": ["React", "CSS", "JavaScript"],
+    "description": "Création et déploiement d'un portfolio personnel. Le site présente les projets réalisés et est mis en ligne via GitHub Pages, servant de vitrine professionnelle.",
+    "tech": ["React", "CSS", "JavaScript"],
     "github": "https://github.com/Bombe18/PortFolio",
     "demo": "",
     "image": "/images/PortFolio.png",
