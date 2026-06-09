@@ -22,9 +22,9 @@ export default function projectsPage() {
              onMouseLeave={() => setHoveredId(null)}>
             <article>
               <div className="relative">
-              <img src={project.image} alt={`${project.name} image`} className="w-full h-48 object-cover rounded-t-3xl mb-4" />
+              <img src={project.image} alt={`${project.alt} image`} className="w-full h-48 object-cover rounded-t-3xl mb-4" />
               {hoveredId === project.id && (
-                <img src="/src/images/Github.png" alt="GitHub repository" className="absolute bottom-6 left-4 w-10 h-10 opacity-90" />
+                <img src="/images/Github.png" alt="GitHub repository" className="absolute bottom-6 left-4 w-10 h-10 opacity-90" />
               )}
               </div>
               <h3 className="text-2xl font-semibold mb-3 text-gray-100 hover:text-cyan-400 transition-colors m-4">{project.title}</h3>
