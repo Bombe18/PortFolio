@@ -1,4 +1,5 @@
 import { useState } from "react";
+import GradientCardBackground from "../components/GradientCardBackground";
 
 export default function ContactPage() {
   const [name, setName] = useState("");
@@ -17,12 +18,7 @@ export default function ContactPage() {
   };
 
   return (
-    <section className="flex min-h-screen flex-col justify-center px-6 sm:px-10 md:px-28 ">
-      <h2 className="text-5xl md:text-6xl mt-6 font-bold mb-6 bg-[linear-gradient(to_right,rgb(103,232,249),rgb(167,139,250),rgb(232,121,249))] bg-clip-text text-transparent text-left w-fit">
-        Contact
-      </h2>
-      <div className="h-1 w-32 bg-linear-to-r from-cyan-500 to-violet-500 mb-12 rounded-full" />
-
+    <GradientCardBackground title="Contact">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="space-y-6 text-gray-300">
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
@@ -32,37 +28,39 @@ export default function ContactPage() {
           <div className="flex flex-col gap-8 text-2xl">
 
             <a href="mailto:cyrilco18@gmail.com" target="_blank" rel="noopener noreferrer">
-              <div className="flex items-center gap-4 bg-slate-900/50 backdrop-blur-sm border border-violet-500/30 rounded-xl p-5 shadow-lg hover:scale-105 hover:translate-x-2 transition-transform  ">
+              <div className="flex items-center gap-4 bg-slate-900/50 backdrop-blur-sm border border-violet-500/30 rounded-xl p-5 shadow-lg hover:scale-105 hover:translate-x-2 transition-transform">
                 <div className="bg-cyan-500 w-12 h-12 rounded-[20%] flex items-center justify-center">
                   <i className="fa fa-envelope" aria-hidden="true" />
                 </div>
-                <span >Email</span>
+                <span>Email</span>
               </div>
             </a>
 
             <a href="https://github.com/Bombe18/" target="_blank" rel="noopener noreferrer">
-              <div className="flex items-center gap-4 bg-slate-900/50 backdrop-blur-sm border border-violet-500/30 rounded-xl p-5 shadow-lg hover:scale-105 hover:translate-x-2 transition-transform  ">
+              <div className="flex items-center gap-4 bg-slate-900/50 backdrop-blur-sm border border-violet-500/30 rounded-xl p-5 shadow-lg hover:scale-105 hover:translate-x-2 transition-transform">
                 <div className="bg-gray-800 w-12 h-12 rounded-[20%] flex items-center justify-center">
                   <i className="fa-brands fa-github" aria-hidden="true" />
                 </div>
-                <span >GitHub</span>
+                <span>GitHub</span>
               </div>
             </a>
 
             <a href="https://www.linkedin.com/in/cyril-colin-50b47b261/" target="_blank" rel="noopener noreferrer">
-              <div className="flex items-center gap-4 bg-slate-900/50 backdrop-blur-sm border border-violet-500/30 rounded-xl p-5 shadow-lg hover:scale-105 hover:translate-x-2 transition-transform  ">
+              <div className="flex items-center gap-4 bg-slate-900/50 backdrop-blur-sm border border-violet-500/30 rounded-xl p-5 shadow-lg hover:scale-105 hover:translate-x-2 transition-transform">
                 <div className="bg-blue-500 w-12 h-12 rounded-[20%] flex items-center justify-center">
                   <i className="fa-brands fa-linkedin" aria-hidden="true" />
-                </div><span >LinkedIn</span>
+                </div>
+                <span>LinkedIn</span>
               </div>
             </a>
           </div>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6 bg-slate-900/70 p-8 rounded-3xl border border-violet-500/30 shadow-lg mb-20">
-          <label className="block">
+          <label htmlFor="name" className="block">
             <span className="text-lg font-medium text-gray-300 mb-2">Nom</span>
             <input
+              id="name"
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -72,9 +70,10 @@ export default function ContactPage() {
             />
           </label>
 
-          <label className="block">
+          <label htmlFor="email" className="block">
             <span className="text-lg font-medium text-gray-300 mb-2">Email</span>
             <input
+              id="email"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -84,9 +83,10 @@ export default function ContactPage() {
             />
           </label>
 
-          <label className="block">
+          <label htmlFor="message" className="block">
             <span className="text-lg font-medium text-gray-300 mb-2">Message</span>
             <textarea
+              id="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
@@ -105,6 +105,6 @@ export default function ContactPage() {
           </button>
         </form>
       </div>
-    </section>
+    </GradientCardBackground>
   );
 }
