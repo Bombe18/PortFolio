@@ -31,13 +31,8 @@ export default function HeroPage() {
           Passionné par la création d&apos;expériences web innovantes et immersives
         </p>
         <div className="flex flex-col sm:flex-row gap-6 items-center">
-          <Link to="/projects" onClick={handleProjectsClick}>
-
-            <button
-              className="flex items-center gap-3 px-8 py-4 rounded-full font-semibold text-white text-base cursor-pointer transition-transform duration-200 hover:scale-105 active:scale-95 bg-linear-to-r from-cyan-400 to-violet-500 shadow-[0_4px_24px_rgba(139,92,246,0.45)]"
-              type="button">
+          <Link to="/projects" onClick={handleProjectsClick} className="flex items-center gap-3 px-8 py-4 rounded-full font-semibold text-white text-base cursor-pointer transition-transform duration-200 hover:scale-105 active:scale-95 bg-linear-to-r from-cyan-400 to-violet-500 shadow-[0_4px_24px_rgba(139,92,246,0.45)]">
               Voir mes projets <i className="fa-solid fa-angle-down"></i>
-            </button>
           </Link>
           <a
             href="/document/Cyril-Colin-11-05-2026.pdf"
