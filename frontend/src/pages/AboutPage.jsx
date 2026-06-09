@@ -42,7 +42,7 @@ export default function AboutPage() {
         </div>
 
         {/* Badge disponibilité */}
-        <div className="shrink-0 flex flex-col items-center justify-center gap-3 bg-slate-900/60 border border-violet-500/30 backdrop-blur-sm rounded-2xl px-8 py-6 shadow-lg">
+        <div className="shrink-0 flex flex-col items-center justify-center gap-3 bg-slate-900/60 border border-violet-500/30 backdrop-blur-sm rounded-2xl px-8 py-6 shadow-lg w-full lg:w-auto ">
           <span
             className={`w-4 h-4 rounded-full animate-pulse ${isAvailable
               ? "bg-green-400 shadow-[0_0_10px_2px_rgba(74,222,128,0.5)]"
