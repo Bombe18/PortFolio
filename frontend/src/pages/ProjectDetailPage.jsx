@@ -10,7 +10,7 @@ export default function ProjectDetailPage() {
     return (
       <div className="relative">
         <ParticlesBackground />
-        <div className="relative z-10 flex min-h-screen flex-col items-center justify-center gap-6 text-gray-100">
+        <main className="relative z-10 flex min-h-screen flex-col items-center justify-center gap-6 text-gray-100">
           <p className="text-xl">Projet introuvable.</p>
           <Link
             to="/projects"
@@ -19,7 +19,7 @@ export default function ProjectDetailPage() {
             <i className="fa-solid fa-arrow-left" aria-hidden="true" />
             Retour aux projets
           </Link>
-        </div>
+        </main>
       </div>
     );
   }
@@ -28,7 +28,7 @@ export default function ProjectDetailPage() {
     <div className="relative">
       <ParticlesBackground />
 
-      <div className="relative z-10 min-h-screen px-6 sm:px-10 md:px-28 py-10">
+      <main className="relative z-10 min-h-screen px-6 sm:px-10 md:px-28 py-10">
 
         {/* Bouton retour */}
         <Link
@@ -147,17 +147,17 @@ export default function ProjectDetailPage() {
 
         {/* Padding bas pour respirer */}
         <div className="h-16" />
-      </div>
+      </main>
     </div>
   );
 }
 
 function SectionCard({ icon, iconColor, title, children }) {
   return (
-    <div className="bg-slate-900/50 backdrop-blur-sm border border-violet-500/30 rounded-2xl p-6">
+    <div className="bg-slate-900/50 backdrop-blur-sm border border-violet-500/30 rounded-2xl p-6 max-p-2">
       <div className="flex items-center gap-3 mb-5">
-        <div className={`inline-flex p-3 rounded-xl bg-linear-to-br ${iconColor} shrink-0`}>
-          <i className={`${icon} text-white text-sm`} aria-hidden="true" />
+        <div className={`inline-flex p-3 rounded-xl bg-linear-to-br ${iconColor}  shrink-0`}>
+          <i className={`${icon} text-white text-sm h-5 w-5 flex justify-center`} aria-hidden="true" />
         </div>
         <h2 className="text-lg font-semibold text-gray-100">{title}</h2>
       </div>

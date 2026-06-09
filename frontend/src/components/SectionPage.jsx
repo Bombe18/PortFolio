@@ -1,4 +1,4 @@
-export default function GradientCardBackground({ title, children }) {
+export default function SectionPage({ title, children }) {
   return (
     <section className="flex min-h-screen flex-col justify-center px-6 sm:px-10 md:px-28">
       <div className="text-left w-fit">

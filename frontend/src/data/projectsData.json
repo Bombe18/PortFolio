@@ -8,7 +8,7 @@
     "github": "https://github.com/Bombe18/booki",
     "demo": "",
     "image": "/images/Booki.png",
-    "alt": "Capture d'écran du projet Booki, une page d'accueil d'agence de voyage réalisée en HTML et CSS, avec un design responsive et fidèle à la maquette Figma."
+    "alt": "Capture d'écran du projet Booki, une page d'accueil d'agence de voyage réalisée en HTML et CSS."
   },
   {
     "id": 2,
@@ -18,7 +18,7 @@
     "github": "https://github.com/Bombe18/sophie-bluel",
     "demo": "",
     "image": "/images/Sophie-Bluel.png",
-    "alt": "Capture d'écran du projet Sophie Bluel, une page web dynamique réalisée en JavaScript, avec des fonctionnalités interactives et des appels API pour afficher et manipuler les données.",
+    "alt": "Capture d'écran du projet Sophie Bluel, une page web dynamique réalisée en JavaScript.",
     "hasDetail": true,
     "context": [
       "Dans le cadre de ma mission au sein de l'agence ArchiWebos, une agence web de 50 collaborateurs, j'ai intégré une équipe en tant que développeur front-end en renfort sur un projet de site vitrine pour un architecte.",
@@ -68,7 +68,7 @@
     "github": "https://github.com/Bombe18/Nina-Carducci-Dev-master",
     "demo": "",
     "image": "/images/Nina-Carducci.png",
-    "alt": "Capture d'écran du projet Nina Carducci, un site de photographe optimisé pour les performances, le SEO et l'accessibilité, avec des audits réalisés à l'aide de Lighthouse et Wave."
+    "alt": "Capture d'écran du projet Nina Carducci, optimisé pour les performances, le SEO et l'accessibilité."
   },
   {
     "id": 4,
@@ -78,7 +78,7 @@
     "github": "https://github.com/Bombe18/Kasa",
     "demo": "",
     "image": "/images/Kasa.png",
-    "alt": "Capture d'écran du projet Kasa, une application web de location immobilière réalisée avec React, mettant en œuvre des composants React et la navigation avec React Router pour une interface utilisateur dynamique."
+    "alt": "Capture d'écran du projet Kasa, une application web de location immobilière réalisée avec React."
   },
   {
     "id": 5,
@@ -88,7 +88,7 @@
     "github": "https://github.com/Bombe18/Dev-Web-livres-main",
     "demo": "",
     "image": "/images/MonVieuxGrimoire.png",
-    "alt": "Capture d'écran du projet Mon Vieux Grimoire, une application de notation de livres avec un back-end développé en Node.js, Express et MongoDB, incluant une API REST sécurisée avec JWT et Bcrypt.",
+    "alt": "Capture d'écran du projet Mon Vieux Grimoire",
     "hasDetail": true,
     "context": [
       "Après un an d'expérience en tant que développeur back-end freelance dans la région de Lille, j'ai été sollicité par un développeur front-end avec lequel j'avais l'habitude de collaborer.",
@@ -141,7 +141,7 @@
     "github": "#",
     "demo": "",
     "image": "/images/Qwenta.png",
-    "alt": "Capture d'écran du projet Qwenta, un site de planification de développement web, avec une gestion de projet efficace et une veille technologique régulière."
+    "alt": "Capture d'écran du projet Qwenta, un site de planification de développement web."
   },
   {
     "id": 7,
@@ -151,6 +151,6 @@
     "github": "https://github.com/Bombe18/PortFolio",
     "demo": "",
     "image": "/images/PortFolio.png",
-    "alt": "Capture d'écran du projet PortFolio, un portfolio de développeur présentant les projets réalisés et mis en ligne via GitHub Pages."
+    "alt": "Capture d'écran du projet PortFolio."
   }
 ]

@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import projects from "../data/projectsData.json";
-import GradientCardBackground from "../components/GradientCardBackground";
+import SectionPage from "../components/SectionPage";
 
 export default function ProjectsPage() {
   const [hoveredId, setHoveredId] = useState(null);
 
   return (
-    <GradientCardBackground title="Projets">
+    <SectionPage title="Projets">
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-8">
         {projects.map((project) => {
           const isHovered = hoveredId === project.id;
@@ -73,6 +73,6 @@ export default function ProjectsPage() {
           );
         })}
       </div>
-    </GradientCardBackground>
+    </SectionPage>
   );
 }

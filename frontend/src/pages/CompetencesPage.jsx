@@ -1,9 +1,9 @@
 import skills from "../data/competence.json";
-import GradientCardBackground from "../components/GradientCardBackground";
+import SectionPage from "../components/SectionPage";
 
 export default function CompetencesPages() {
   return (
-    <GradientCardBackground title="Compétences">
+    <SectionPage title="Compétences">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {skills.map((competence) => (
           <div key={competence.id} className="group">
@@ -35,6 +35,6 @@ export default function CompetencesPages() {
           </div>
         ))}
       </div>
-    </GradientCardBackground>
+    </SectionPage>
   );
 }

@@ -23,7 +23,7 @@ export default function Layout() {
   }, [location.pathname])
 
   return (
-    <div className="relative bg-[#0a0520] -z-1000">
+    <div className="relative ">
       <ParticlesBackground />
       <FloatingNav />
 

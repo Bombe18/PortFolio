@@ -1,5 +1,5 @@
 import { useState } from "react";
-import GradientCardBackground from "../components/GradientCardBackground";
+import SectionPage from "../components/SectionPage";
 
 export default function ContactPage() {
   const [name, setName] = useState("");
@@ -18,7 +18,7 @@ export default function ContactPage() {
   };
 
   return (
-    <GradientCardBackground title="Contact">
+    <SectionPage title="Contact">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="space-y-6 text-gray-300">
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
@@ -105,6 +105,6 @@ export default function ContactPage() {
           </button>
         </form>
       </div>
-    </GradientCardBackground>
+    </SectionPage>
   );
 }

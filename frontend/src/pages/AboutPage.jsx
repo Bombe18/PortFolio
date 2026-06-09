@@ -1,4 +1,4 @@
-import GradientCardBackground from "../components/GradientCardBackground";
+import SectionPage from "../components/SectionPage";
 import SectionCard from "../components/SectionCard";
 
 const cards = [
@@ -34,7 +34,7 @@ export default function AboutPage() {
   const departement = "Indre-et-Loire";
 
   return (
-    <GradientCardBackground title="À propos">
+    <SectionPage title="À propos">
 
       {/* Intro + badge dispo */}
       <div className="flex flex-col lg:flex-row gap-10 mb-14 items-start">
@@ -75,7 +75,7 @@ export default function AboutPage() {
           <span className="text-sm font-medium text-gray-300 tracking-wide">
             {isAvailable ? "Disponible" : "Non disponible"}
           </span>
-          <span className="text-xs text-gray-500 text-center leading-relaxed max-w-35">
+          <span className="text-xs text-gray-500 text-center leading-relaxed max-w-[140px]">
             {isAvailable ? "Ouvert aux opportunités" : "Pas en recherche active"}
           </span>
         </div>
@@ -88,6 +88,6 @@ export default function AboutPage() {
         ))}
       </div>
 
-    </GradientCardBackground>
+    </SectionPage>
   );
 }
