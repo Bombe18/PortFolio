@@ -53,7 +53,7 @@ export const floatingNav = {
   btnDefault: [
     "bg-[rgba(15,23,42,0.85)]",
     "border border-[rgba(99,102,241,0.25)] border-[1.5px]",
-    "text-[#818cf8]",
+    "text-slate-100",
     "shadow-[0_4px_12px_rgba(0,0,0,0.4)]",
     "backdrop-blur-md",
   ].join(" "),
@@ -61,7 +61,7 @@ export const floatingNav = {
   // État actif
   btnActive: [
     "border-[1.5px] border-[rgba(139,92,246,0.8)]",
-    "text-[#a5b4fc]",
+    "text-white",
     "bg-[linear-gradient(135deg,rgba(99,102,241,0.25)_0%,rgba(139,92,246,0.15)_100%)]",
     "shadow-[0_0_18px_rgba(139,92,246,0.35),inset_0_0_12px_rgba(99,102,241,0.1)]",
     "backdrop-blur-md",
@@ -102,10 +102,10 @@ export const floatingNav = {
     "active:scale-90",
   ].join(" "),
 
-  mobileBtnDefault: "text-[#6366f1]",
+  mobileBtnDefault: "text-slate-200",
 
   mobileBtnActive: [
-    "text-[#a5b4fc]",
+    "text-white",
   ].join(" "),
 
   // Label sous l'icône

@@ -4,7 +4,7 @@
     "name": "HTML5",
     "level": 90,
     "category": "Frontend",
-    "icon": "/src/images/HTML5.png",
+    "icon": "/images/HTML5.png",
     "color": {
       "from": "from-orange-500",
       "to": "to-red-500",
@@ -16,7 +16,7 @@
     "name": "CSS3",
     "level": 85,
     "category": "Frontend",
-    "icon": "/src/images/CSS3.png",
+    "icon": "/images/CSS3.png",
     "color": {
       "from": "from-blue-500",
       "to": "to-sky-400",
@@ -28,7 +28,7 @@
     "name": "JavaScript ES6+",
     "level": 60,
     "category": "Frontend",
-    "icon": "/src/images/javascript.webp",
+    "icon": "/images/javascript.webp",
     "color": {
       "from": "from-yellow-400",
       "to": "to-amber-300",
@@ -40,7 +40,7 @@
     "name": "React",
     "level": 75,
     "category": "Frontend",
-    "icon": "/src/images/react.png",
+    "icon": "/images/react.png",
     "color": {
       "from": "from-cyan-400",
       "to": "to-blue-500",
@@ -52,7 +52,7 @@
     "name": "Git/GitHub",
     "level": 75,
     "category": "Tools",
-    "icon": "/src/images/github.png",
+    "icon": "/images/Github.png",
     "color": {
       "from": "from-gray-400",
       "to": "to-gray-600",
@@ -64,7 +64,7 @@
     "name": "Responsive Design",
     "level": 80,
     "category": "Frontend",
-    "icon": "/src/images/responsive.png",
+    "icon": "/images/responsive.png",
     "color": {
       "from": "from-green-400",
       "to": "to-emerald-500",
@@ -76,7 +76,7 @@
     "name": "Accessibilité",
     "level": 80,
     "category": "Frontend",
-    "icon": "/src/images/accessibility-icon.webp",
+    "icon": "/images/accessibility-icon.webp",
     "color": {
       "from": "from-yellow-400",
       "to": "to-lime-500",
@@ -88,7 +88,7 @@
     "name": "SEO",
     "level": 75,
     "category": "Frontend",
-    "icon": "/src/images/seo.png",
+    "icon": "/images/seo.png",
     "color": {
       "from": "from-yellow-300",
       "to": "to-yellow-600",
@@ -100,7 +100,7 @@
     "name": "node.js",
     "level": 65,
     "category": "Backend",
-    "icon": "/src/images/nodejs.webp",
+    "icon": "/images/nodejs.webp",
     "color": {
       "from": "from-green-400",
       "to": "to-green-600",

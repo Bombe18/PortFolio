@@ -7,7 +7,8 @@
     "stack": ["HTML5", "CSS3","Responsive Design", "Figma", "Git/Github"],
     "github": "https://github.com/Bombe18/booki",
     "demo": "",
-    "image": "/src/images/Booki.png"
+    "image": "/images/Booki.png",
+    "alt": "Capture d'écran du projet Booki, une page d'accueil d'agence de voyage réalisée en HTML et CSS, avec un design responsive et fidèle à la maquette Figma."
   },
   {
     "id": 2,
@@ -16,7 +17,8 @@
     "stack": ["JavaScript", "Formulaires", "API REST"],
     "github": "https://github.com/Bombe18/sophie-bluel",
     "demo": "",
-    "image": "/src/images/Sophie-Bluel.png"
+    "image": "/images/Sophie-Bluel.png",
+    "alt": "Capture d'écran du projet Sophie Bluel, une page web dynamique réalisée en JavaScript, avec des fonctionnalités interactives et des appels API pour afficher et manipuler les données."
   },
   {
     "id": 3,
@@ -25,7 +27,8 @@
     "stack": ["Lighthouse", "Wave", "Chrome DevTools", "SEO", "Accessibilité" ],
     "github": "https://github.com/Bombe18/Nina-Carducci-Dev-master",
     "demo": "",
-    "image": "/src/images/Nina-Carducci.png"
+    "image": "/images/Nina-Carducci.png",
+    "alt": "Capture d'écran du projet Nina Carducci, un site de photographe optimisé pour les performances, le SEO et l'accessibilité, avec des audits réalisés à l'aide de Lighthouse et Wave."
   },
   {
     "id": 4,
@@ -34,7 +37,8 @@
     "stack": ["React", "Sass"],
     "github": "https://github.com/Bombe18/Kasa",
     "demo": "",
-    "image": "/src/images/Kasa.png"
+    "image": "/images/Kasa.png",
+    "alt": "Capture d'écran du projet Kasa, une application web de location immobilière réalisée avec React, mettant en œuvre des composants React et la navigation avec React Router pour une interface utilisateur dynamique."
   },
   {
     "id": 5,
@@ -43,7 +47,9 @@
     "stack": ["Node.js", "Express", "MongoDB", "Mongoose", "JWT", "Bcrypt"],
     "github": "https://github.com/Bombe18/Dev-Web-livres-main",
     "demo": "",
-    "image": "/src/images/MonVieuxGrimoire.png"
+    "image": "/images/MonVieuxGrimoire.png",
+    "alt": "Capture d'écran du projet Mon Vieux Grimoire, une application de notation de livres avec un back-end développé en Node.js, Express et MongoDB, incluant une API REST sécurisée avec JWT et Bcrypt."
+
   }  ,
   {
     "id": 6,
@@ -52,7 +58,8 @@
     "stack": ["Notion.io", "Veille technologique", "Rédaction de spécifications techniques", "Kanban", "Méthodologie Agile"],
     "github": "#",
     "demo": "",
-    "image": "/src/images/Qwenta.png"
+    "image": "/images/Qwenta.png",
+    "alt": "Capture d'écran du projet Qwenta, un site de planification de développement web, avec une gestion de projet efficace et une veille technologique régulière."
   },
   {
     "id": 7,
@@ -61,6 +68,7 @@
     "stack": ["React", "CSS", "JavaScript"],
     "github": "https://github.com/Bombe18/PortFolio",
     "demo": "",
-    "image": "/src/images/PortFolio.png"
+    "image": "/images/PortFolio.png",
+    "alt": "Capture d'écran du projet PortFolio, un portfolio de développeur présentant les projets réalisés et mis en ligne via GitHub Pages."
   }
 ]

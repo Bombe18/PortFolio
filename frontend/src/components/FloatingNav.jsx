@@ -46,6 +46,7 @@ export default function FloatingNav() {
           height={navItems.length * 68}
           viewBox={`0 0 60 ${navItems.length * 68}`}
           fill="none"
+          aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -72,12 +73,14 @@ export default function FloatingNav() {
           const delayClass    = s.delayClasses[i];
           const opacityClass  = open || isFirst ? s.itemVisible : s.itemHidden;
           const iconClass     = isFirst ? (open ? "fa-solid fa-house" : "fa-solid fa-bars") : item.iconClass;
+          const buttonLabel   = isFirst && !open ? "Ouvrir le menu de navigation" : item.label;
 
           return (
             <div key={item.id} className={`${s.itemBase} ${translateClass} ${delayClass} ${opacityClass}`}>
               {open && <span className={s.tooltip}>{item.label}</span>}
               <button
                 type="button"
+                aria-label={buttonLabel}
                 onClick={() => {
                   if (isFirst) {
                     if (!open) { setOpen(true); return; }
@@ -106,11 +109,13 @@ export default function FloatingNav() {
       <div className={s.mobileLine} />
 
       {navItems.map((item) => {
-        const isActive = active === item.id;
+        const isActive    = active === item.id;
+        const buttonLabel = item.label;
         return (
           <button
             key={item.id}
             type="button"
+            aria-label={buttonLabel}
             onClick={() => { scrollTo(item.target); setActive(item.id); }}
             className={[s.mobileBtnBase, isActive ? s.mobileBtnActive : s.mobileBtnDefault].join(" ")}
           >
