@@ -1,6 +1,5 @@
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import cvPdf from "../components/document/Cyril-Colin-11-05-2026.pdf";
 
 export default function HeroPage() {
   const location = useLocation()
@@ -31,20 +30,20 @@ export default function HeroPage() {
         <p className="mb-10 max-w-xl text-[#cbd5e1] text-base">
           Passionné par la création d&apos;expériences web innovantes et immersives
         </p>
-        <div className="flex flex-col sm:flex-row gap-6">
+        <div className="flex flex-col sm:flex-row gap-6 items-center">
           <Link to="/projects" onClick={handleProjectsClick}>
 
             <button
               className="flex items-center gap-3 px-8 py-4 rounded-full font-semibold text-white text-base cursor-pointer transition-transform duration-200 hover:scale-105 active:scale-95 bg-gradient-to-r from-cyan-400 to-violet-500 shadow-[0_4px_24px_rgba(139,92,246,0.45)]"
               type="button">
-              Voir mes projets <i class="fa-solid fa-angle-down"></i>
+              Voir mes projets <i className="fa-solid fa-angle-down"></i>
             </button>
           </Link>
           <a
-            href={cvPdf}
-            download="Cyril-Colin-CV.pdf"
+            href="/document/Cyril-Colin-11-05-2026.pdf"
+            download
             className="flex items-center gap-3 px-8 py-4 rounded-full font-semibold text-white text-base transition-transform duration-200 hover:scale-105 active:scale-95 bg-gradient-to-r from-cyan-400 to-violet-500 shadow-[0_4px_24px_rgba(139,92,246,0.45)]">
-            Télécharger mon CV <i class="fa-solid fa-download"></i>
+            Télécharger mon CV <i className="fa-solid fa-download"></i>
           </a>
         </div>
       </div>
