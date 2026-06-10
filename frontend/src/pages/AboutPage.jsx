@@ -84,7 +84,15 @@ export default function AboutPage() {
       {/* Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {cards.map((card) => (
-          <ArticleCard key={card.title} {...card} />
+          <ArticleCard key={card.title}>
+            <div className="flex items-center gap-3 mb-4">
+              <div className={`inline-flex p-3 rounded-xl bg-linear-to-br ${card.gradient} shrink-0`}>
+                <i className={`fa-solid ${card.icon} w-5 h-5 flex justify-center text-white text-sm`} aria-hidden="true" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-100">{card.title}</h3>
+            </div>
+            <p className="text-gray-400 text-sm leading-relaxed">{card.description}</p>
+          </ArticleCard>
         ))}
       </div>
 
