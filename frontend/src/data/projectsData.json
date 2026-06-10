@@ -138,7 +138,7 @@
     "title": "Planifiez le développement du site de votre client",
     "description": "Projet de gestion de projet web. Il porte sur la rédaction de spécifications techniques, la présentation de la solution technique, la mise en place d'un suivi de projet (Kanban) et d'une veille technologique.",
     "tech": ["Notion.io", "Veille technologique", "Rédaction de spécifications techniques", "Kanban", "Méthodologie Agile"],
-    "github": "#",
+    "github": "https://github.com/Bombe18/Planifiez-le-d-veloppement-du-site-de-votre-client",
     "demo": "",
     "image": "/images/Qwenta.png",
     "alt": "Capture d'écran du projet Qwenta, un site de planification de développement web."
