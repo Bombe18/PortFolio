@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, Navigate, useParams } from "react-router-dom";
 import projects from "../data/projectsData.json";
 import ParticlesBackground from "../components/Background.jsx";
 import ArticleCard from "../components/ArticleCard.jsx";
@@ -8,21 +8,7 @@ export default function ProjectDetailPage() {
   const project = projects.find((p) => p.id === parseInt(id));
 
   if (!project || !project.hasDetail) {
-    return (
-      <div className="relative">
-        <ParticlesBackground />
-        <main className="relative z-10 flex min-h-screen flex-col items-center justify-center gap-6 text-gray-100">
-          <p className="text-xl">Projet introuvable.</p>
-          <Link
-            to="/projects"
-            className="flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-white bg-linear-to-r from-cyan-400 to-violet-500 hover:scale-105 transition-transform"
-          >
-            <i className="fa-solid fa-arrow-left" aria-hidden="true" />
-            Retour aux projets
-          </Link>
-        </main>
-      </div>
-    );
+    return <Navigate to="/404" replace />;
   }
 
   return (
@@ -163,7 +149,7 @@ export default function ProjectDetailPage() {
   );
 }
 
-
+{/* Composants pour les listes à puces personnalisées */}
 function BulletList({ items }) {
   return (
     <ul className="space-y-2">

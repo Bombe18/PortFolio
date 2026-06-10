@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './Layout.jsx'
 import ProjectDetailPage from './pages/ProjectDetailPage.jsx'
+import NotFoundPage from './pages/NotFoundPage.jsx'
 
 const router = createBrowserRouter([
   { path: '/', element: <Layout /> },
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
   { path: '/projects', element: <Layout /> },
   { path: '/contact', element: <Layout /> },
   { path: '/projet/:id', element: <ProjectDetailPage /> },
+  { path: '*', element: <NotFoundPage /> },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
