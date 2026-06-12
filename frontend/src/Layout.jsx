@@ -27,7 +27,7 @@ export default function Layout() {
       <ParticlesBackground />
       <FloatingNav />
 
-      <div className={mainStyles.mainContainer + ' relative z-10'}>
+      <main className={mainStyles.mainContainer + ' relative z-10'}>
         <section id="home" className="min-h-screen">
           <HeroPage />
         </section>
@@ -47,7 +47,7 @@ export default function Layout() {
         <section id="contact" className="min-h-screen">
           <ContactPage />
         </section>
-      </div>
+      </main>
     </div>
   )
 }
