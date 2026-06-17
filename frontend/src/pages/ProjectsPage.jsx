@@ -32,7 +32,7 @@ export default function ProjectsPage() {
                   </>
                 ) : (
                   <>
-                    <img src="/images/Github.png" alt="" className="w-4 h-4" />
+                    <img src="/images/Github.png" alt="Lien vers github" className="scale-150 w-4 h-4" />
                     Voir sur GitHub
                   </>
                 )}
