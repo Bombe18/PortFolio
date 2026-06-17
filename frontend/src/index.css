@@ -8,8 +8,16 @@
   100% { transform: translateX(250%); }
 }
 
-
- 
 .animate-shimmer {
   animation: shimmer 1.4s ease-in-out infinite;
+}
+
+/* Hero fade-in on load */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out both;
 }
