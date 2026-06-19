@@ -4,7 +4,7 @@ import SectionPage from "../components/SectionPage";
 export default function CompetencesPages() {
   return (
     <SectionPage title="Compétences">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div tabIndex={0} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {skills.map((competence) => (
           <div key={competence.id} className="group">
 
