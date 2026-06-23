@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "HTML5",
-    "level": 90,
+    "level": 70,
     "category": "Frontend",
     "icon": "/images/HTML5.png",
     "color": {
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "CSS3",
-    "level": 85,
+    "level": 65,
     "category": "Frontend",
     "icon": "/images/CSS3.png",
     "color": {
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "JavaScript ES6+",
-    "level": 60,
+    "level": 40,
     "category": "Frontend",
     "icon": "/images/javascript.webp",
     "color": {
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "React",
-    "level": 75,
+    "level": 50,
     "category": "Frontend",
     "icon": "/images/react.png",
     "color": {
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "Git/GitHub",
-    "level": 75,
+    "level": 50,
     "category": "Tools",
     "icon": "/images/Github.png",
     "color": {
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Responsive Design",
-    "level": 80,
+    "level": 65,
     "category": "Frontend",
     "icon": "/images/responsive.png",
     "color": {
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Accessibilité",
-    "level": 80,
+    "level": 75,
     "category": "Frontend",
     "icon": "/images/accessibility-icon.webp",
     "color": {
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "SEO",
-    "level": 75,
+    "level": 70,
     "category": "Frontend",
     "icon": "/images/seo.png",
     "color": {
@@ -98,7 +98,7 @@
   {
     "id": 9,
     "name": "node.js",
-    "level": 65,
+    "level": 60,
     "category": "Backend",
     "icon": "/images/nodejs.webp",
     "color": {
