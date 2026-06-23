@@ -142,8 +142,7 @@ export default function AboutPage() {
           {hobbies.map((hobby) => (
             <div
               key={hobby.label}
-              className="flex items-center gap-2.5 bg-slate-900/60 border border-white/10 backdrop-blur-sm rounded-full px-4 py-2 shadow"
-            >
+              className="flex items-center gap-2.5 bg-slate-900/60 border border-white/10 backdrop-blur-sm rounded-full px-4 py-2 shadow">
               <div className={`inline-flex justify-center items-center rounded-full  bg-linear-to-br w-6 h-6 ${hobby.gradient}`}>
                 <i className={`fa-solid ${hobby.icon} text-white text-xs`} aria-hidden="true" />
               </div>
@@ -152,6 +151,13 @@ export default function AboutPage() {
           ))}
         </div>
       </div>
+
+      {/* Parcours */}
+      <div>
+        <h3 className="text-2xl font-semibold text-gray-300 mb-4 tracking-wide">Mon parcours</h3>
+        <p className="text-lg text-gray-200 leading-relaxed">Avant 2025, je travaillais dans le service publique. J'ai décidé de faire une reconversion professionnelle et j'ai décidé de faire une formation en tant que developpeur web chez Openclassrooms que j'ai commencé en Novembre 2025 pour le terminer en juin 2026.</p>
+      </div>
+
 
     </SectionPage>
   );
