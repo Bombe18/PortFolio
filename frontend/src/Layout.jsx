@@ -28,23 +28,23 @@ export default function Layout() {
       <FloatingNav />
 
       <main className={mainStyles.mainContainer + ' relative z-10'}>
-        <section id="home" className="min-h-screen">
+        <section id="home" >
           <HeroPage />
         </section>
 
-        <section id="about" className="min-h-screen">
+        <section id="about" >
           <AboutPage />
         </section>
 
-        <section id="competences" className="min-h-screen">
+        <section id="competences" >
           <CompetencesPage />
         </section>
 
-        <section id="projects" className="min-h-screen">
+        <section id="projects" >
           <ProjectsPage />
         </section>
 
-        <section id="contact" className="min-h-screen">
+        <section id="contact" >
           <ContactPage />
         </section>
       </main>
