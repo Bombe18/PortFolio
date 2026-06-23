@@ -154,7 +154,7 @@ export default function AboutPage() {
 
       {/* Parcours */}
       <div>
-        <h3 className="text-2xl font-semibold text-gray-300 mb-4 tracking-wide">Mon parcours</h3>
+        <h3 className="text-2xl font-semibold text-gray-300 mb-4 mt-6 tracking-wide">Mon parcours</h3>
         <p className="text-lg text-gray-200 leading-relaxed">Avant 2025, je travaillais dans le service publique. J'ai décidé de faire une reconversion professionnelle et j'ai décidé de faire une formation en tant que developpeur web chez Openclassrooms que j'ai commencé en Novembre 2025 pour le terminer en juin 2026.</p>
       </div>
 
