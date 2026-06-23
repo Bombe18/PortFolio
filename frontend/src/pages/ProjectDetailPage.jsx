@@ -101,7 +101,7 @@ export default function ProjectDetailPage() {
               <div className="inline-flex p-3 rounded-xl bg-linear-to-br from-violet-500 to-violet-400 shrink-0">
                 <i className="fa-solid fa-bullseye w-5 h-5 flex justify-center text-white text-sm" aria-hidden="true" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-100">Enjeux</h3>
+              <h3 className="text-lg font-semibold text-gray-100">Objectifs</h3>
             </div>
             <BulletList items={project.stakes} />
           </ArticleCard>
