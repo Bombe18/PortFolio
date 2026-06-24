@@ -10,7 +10,7 @@ export default function ContactPage() {
     event.preventDefault();
 
     const recipient = "cyrilco18@gmail.com";
-    const subject = encodeURIComponent(`Contact depuis le portfolio - ${name || "Profil"}`);
+    const subject = encodeURIComponent(`Contact depuis le portfolio - ${name}`);
     const body = encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\n${message}`);
     const mailtoUrl = `mailto:${recipient}?subject=${subject}&body=${body}`;
 
