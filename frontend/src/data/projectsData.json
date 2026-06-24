@@ -87,7 +87,7 @@
     "tech": ["Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "bcrypt", "Multer", "Sharp", "Git / GitHub"],
     "github": "https://github.com/Bombe18/Dev-Web-livres-main",
     "demo": "",
-    "image": "/images/MonVieuxGrimoire.png",
+    "image": "/images/MonVieuxGrimoire.webp",
     "alt": "Capture d'écran du projet Mon Vieux Grimoire",
     "hasDetail": true,
     "context": [
