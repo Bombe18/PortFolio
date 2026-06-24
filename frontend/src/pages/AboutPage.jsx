@@ -94,7 +94,7 @@ export default function AboutPage() {
           {/* Photo de profil */}
           <div className="w-36 h-36 rounded-full overflow-hidden border-2 border-violet-500/40 shadow-[0_0_24px_4px_rgba(139,92,246,0.2)]">
             <img
-              src="/images/c2a6b838-452d-4e92-97cf-57ef4c1791a3.png"
+              src="/images/c2a6b838-452d-4e92-97cf-57ef4c1791a3.webp"
               alt="Photo de profil"
               className="w-full h-full object-cover object-top"
             />
