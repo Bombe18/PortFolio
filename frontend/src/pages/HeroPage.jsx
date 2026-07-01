@@ -35,7 +35,7 @@ export default function HeroPage() {
               Voir mes projets <i className="fa-solid fa-angle-down"></i>
           </Link>
           <a
-            href="/document/Cyril-Colin-11-05-2026.pdf"
+            href="/document/CV_CYRIL_COLIN.pdf"
             download
             className="flex items-center gap-3 px-8 py-4 rounded-full font-semibold text-white text-base transition-transform duration-200 hover:scale-105 active:scale-95 bg-linear-to-r from-cyan-400 to-violet-500 shadow-[0_4px_24px_rgba(139,92,246,0.45)]">
             Télécharger mon CV <i className="fa-solid fa-download"></i>
