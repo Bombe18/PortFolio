@@ -155,7 +155,7 @@
   },
   {
     "id": 8,
-    "title": "Warthunder Events",
+    "title": "Warthunder Events - Un site communautaire pour les joueurs de War Thunder",
     "description": "Création d'un hub d'événements communautaire pour le jeu War Thunder, permettant aux joueurs de créer et de rejoindre des événements afin de faciliter la mise en relation entre eux.",
     "tech": ["React", "React Router", "i18next", "Tailwind CSS", "Node.js / Express", "MongoDB", "Mongoose", "JWT", "bcrypt", "Cloudinary", "Helmet"],
     "github": "",
