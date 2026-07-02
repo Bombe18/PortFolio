@@ -157,10 +157,53 @@
     "id": 8,
     "title": "Warthunder Events",
     "description": "Création d'un hub d'événements communautaire pour le jeu War Thunder, permettant aux joueurs de créer et de rejoindre des événements afin de faciliter la mise en relation entre eux.",
-    "tech": ["React", "Node.js / Express", "MongoDB"],
+    "tech": ["React", "React Router", "i18next", "Tailwind CSS", "Node.js / Express", "MongoDB", "Mongoose", "JWT", "bcrypt", "Cloudinary", "Helmet"],
     "github": "",
     "demo": "https://warthunder-events.vercel.app/",
     "image": "/images/WarthunderEvent.webp",
-    "alt": "Capture d'écran du projet Warthunder Events, un hub d'événements créé par et pour les joueurs."
+    "alt": "Capture d'écran du projet Warthunder Events, un hub d'événements créé par et pour les joueurs.",
+    "hasDetail": true,
+    "context": [
+      "En tant que développeur indépendant, j'ai conçu et développé seul, de A à Z, un site communautaire dédié au jeu War Thunder.",
+      "Le constat de départ : les joueurs souhaitant organiser des sessions (combats aériens, exercices terrestres, tournois) n'avaient aucune plateforme dédiée pour centraliser leurs annonces et fédérer une communauté internationale autour de leurs événements.",
+      "L'objectif était de créer un hub multilingue permettant à n'importe quel joueur, quelle que soit sa nationalité, de publier un événement et de le faire connaître, tout en réservant l'accès aux liens Discord des créateurs aux seuls utilisateurs connectés."
+    ],
+    "stakes": [
+      "Concevoir seul une architecture full-stack complète (React + Node.js/Express + MongoDB)",
+      "Sécuriser l'application contre les usages malveillants (spam, ajout de données frauduleuses, attaques par force brute)",
+      "Permettre la création, la modification et la suppression d'événements filtrés par type, langue et date",
+      "Gérer un système d'inscription des participants avec une limite de joueurs par événement",
+      "Développer une interface multilingue pour toucher les joueurs de toutes nationalités",
+      "Restreindre l'accès aux liens Discord des événements aux utilisateurs authentifiés",
+      "Mettre en place un espace d'administration pour la gestion des utilisateurs",
+      "Soigner le partage des événements sur les réseaux sociaux et Discord"
+    ],
+    "achievements": [
+      "Développement du back-end avec Express, une architecture routes/controllers/models/middleware et une base MongoDB via Mongoose",
+      "Authentification sécurisée par JWT en cookie httpOnly, mots de passe hashés avec bcrypt et invalidation des sessions à distance via un système de version de token",
+      "Sécurisation de l'API avec Helmet, CORS, limitation du taux de requêtes et validation stricte des entrées utilisateur",
+      "Modélisation des événements (type, langue, date, nombre de places, participants, tournoi) et des utilisateurs (rôle, bannissement, statut partenaire)",
+      "Système de participants avec calcul automatique du nombre de joueurs inscrits par événement",
+      "Upload et hébergement des images d'événements via Cloudinary",
+      "Création d'une page communauté affichant des statistiques globales et un classement des créateurs les plus actifs, calculés par agrégation MongoDB",
+      "Espace d'administration avec recherche paginée des utilisateurs et accès restreint par rôle",
+      "Génération dynamique de pages de partage (Open Graph / Twitter Card) pour un aperçu riche de chaque événement lors d'un partage",
+      "Internationalisation complète du front-end avec i18next",
+      "Interface réalisée en React et Tailwind CSS, avec des composants réutilisables (cartes d'événements, sélecteur de langue, etc.)",
+      "Déploiement et mise en ligne du site sur Vercel"
+    ],
+    "results": [
+      "Un hub d'événements fonctionnel, sécurisé et déployé en production, accessible publiquement",
+      "Les joueurs peuvent créer, consulter et rejoindre des événements filtrés par type et par langue",
+      "Les liens Discord des créateurs sont protégés et réservés aux utilisateurs authentifiés",
+      "La communauté peut suivre son activité globale et ses créateurs les plus actifs via la page dédiée",
+      "Un projet mené intégralement en solo, du cahier des charges au déploiement"
+    ],
+    "improvements": [
+      "Ajout de la connexion via Google, envisagée dès le cahier des charges initial",
+      "Mise en place de tests automatisés (unitaires et end-to-end)",
+      "Système de notifications pour prévenir les participants d'un changement sur un événement",
+      "Mise en cache de certaines requêtes (statistiques communauté) pour réduire la charge serveur"
+    ]
   }
 ]
