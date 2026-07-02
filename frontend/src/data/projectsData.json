@@ -152,5 +152,15 @@
     "demo": "",
     "image": "/images/PortFolio.png",
     "alt": "Capture d'écran du projet PortFolio."
+  },
+  {
+    "id": 8,
+    "title": "Warthunder Events",
+    "description": "Création d'un hub d'événements communautaire pour le jeu War Thunder, permettant aux joueurs de créer et de rejoindre des événements afin de faciliter la mise en relation entre eux.",
+    "tech": ["React", "Node.js / Express", "MongoDB"],
+    "github": "",
+    "demo": "https://warthunder-events.vercel.app/",
+    "image": "/images/WarthunderEvent.webp",
+    "alt": "Capture d'écran du projet Warthunder Events, un hub d'événements créé par et pour les joueurs."
   }
 ]
