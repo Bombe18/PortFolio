@@ -11,6 +11,9 @@ export default function ProjectsPage() {
           const cardClasses =
             "bg-slate-900/50 backdrop-blur-sm border border-violet-500/30 rounded-3xl shadow-lg cursor-pointer hover:border-cyan-400/50 transition-all hover:scale-105 hover:-translate-y-2 duration-200";
 
+          const externalLink = project.github || project.demo;
+          const isGithubLink = Boolean(project.github);
+
           const cardBody = (
             <article className="flex flex-col h-full">
               <div className="relative">
@@ -30,10 +33,15 @@ export default function ProjectsPage() {
                     Voir le cas d&apos;usage
                     <i className="fa-solid fa-arrow-right text-[10px]" aria-hidden="true" />
                   </>
-                ) : (
+                ) : isGithubLink ? (
                   <>
                     <img src="/images/Github.png" alt="Lien vers github" className="scale-150 w-4 h-4" />
                     Voir sur GitHub
+                  </>
+                ) : (
+                  <>
+                    Voir la démo
+                    <i className="fa-solid fa-arrow-up-right-from-square text-[10px]" aria-hidden="true" />
                   </>
                 )}
               </div>
@@ -55,7 +63,7 @@ export default function ProjectsPage() {
           return (
             <a
               key={project.id}
-              href={project.github}
+              href={externalLink}
               target="_blank"
               rel="noopener noreferrer"
               className={cardClasses}
