@@ -82,8 +82,8 @@ export default function ProjectDetailPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
           <ArticleCard>
             <div className="flex items-center gap-3 mb-4">
-              <div className="inline-flex p-3 rounded-xl bg-linear-to-br from-cyan-400 to-blue-500 shrink-0">
-                <i className="fa-solid fa-circle-info w-5 h-5 flex justify-center text-white text-sm" aria-hidden="true" />
+              <div className="inline-flex items-center justify-center  w-10 h-10 p-3 rounded-xl bg-linear-to-br from-cyan-400 to-blue-500 shrink-0">
+                <i className="fa-solid fa-circle-info text-white text-sm" aria-hidden="true" />
               </div>
               <h3 className="text-lg font-semibold text-gray-100">Contexte</h3>
             </div>
@@ -98,8 +98,8 @@ export default function ProjectDetailPage() {
 
           <ArticleCard>
             <div className="flex items-center gap-3 mb-4">
-              <div className="inline-flex p-3 rounded-xl bg-linear-to-br from-violet-500 to-violet-400 shrink-0">
-                <i className="fa-solid fa-bullseye w-5 h-5 flex justify-center text-white text-sm" aria-hidden="true" />
+              <div className="inline-flex items-center justify-center w-10 h-10 p-3 rounded-xl bg-linear-to-br from-violet-500 to-violet-400 shrink-0">
+                <i className="fa-solid fa-bullseye text-white text-sm" aria-hidden="true" />
               </div>
               <h3 className="text-lg font-semibold text-gray-100">Objectifs</h3>
             </div>
@@ -108,8 +108,8 @@ export default function ProjectDetailPage() {
 
           <ArticleCard>
             <div className="flex items-center gap-3 mb-4">
-              <div className="inline-flex p-3 rounded-xl bg-linear-to-br from-emerald-400 to-green-500 shrink-0">
-                <i className="fa-solid fa-code w-5 h-5 flex justify-center text-white text-sm" aria-hidden="true" />
+              <div className="inline-flex items-center justify-center w-10 h-10 p-3 rounded-xl bg-linear-to-br from-emerald-400 to-green-500 shrink-0">
+                <i className="fa-solid fa-code text-white text-sm" aria-hidden="true" />
               </div>
               <h3 className="text-lg font-semibold text-gray-100">Réalisations</h3>
             </div>
@@ -118,8 +118,8 @@ export default function ProjectDetailPage() {
 
           <ArticleCard>
             <div className="flex items-center gap-3 mb-4">
-              <div className="inline-flex p-3 rounded-xl bg-linear-to-br from-fuchsia-400 to-pink-500 shrink-0">
-                <i className="fa-solid fa-chart-line w-5 h-5 flex justify-center text-white text-sm" aria-hidden="true" />
+              <div className="inline-flex items-center justify-center w-10 h-10 p-3 rounded-xl bg-linear-to-br from-fuchsia-400 to-pink-500 shrink-0">
+                <i className="fa-solid fa-chart-line text-white text-sm" aria-hidden="true" />
               </div>
               <h3 className="text-lg font-semibold text-gray-100">Résultats obtenus</h3>
             </div>
@@ -130,8 +130,8 @@ export default function ProjectDetailPage() {
         {/* Axes d'amélioration — pleine largeur */}
         <ArticleCard>
           <div className="flex items-center gap-3 mb-4">
-            <div className="inline-flex p-3 rounded-xl bg-linear-to-br from-amber-400 to-orange-500 shrink-0">
-              <i className="fa-solid fa-lightbulb w-5 h-5 flex justify-center text-white text-sm" aria-hidden="true" />
+            <div className="inline-flex items-center justify-center w-10 h-10 p-3 rounded-xl bg-linear-to-br from-amber-400 to-orange-500 shrink-0">
+              <i className="fa-solid fa-lightbulb text-white text-sm" aria-hidden="true" />
             </div>
             <h3 className="text-lg font-semibold text-gray-100">Axes d'amélioration</h3>
           </div>
