@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "HTML5",
-    "level": 70,
+    "level": 80,
     "category": "Frontend",
     "icon": "/images/HTML5.png",
     "color": {
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "CSS3",
-    "level": 65,
+    "level": 75,
     "category": "Frontend",
     "icon": "/images/CSS3.png",
     "color": {
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "JavaScript ES6+",
-    "level": 40,
+    "level": 70,
     "category": "Frontend",
     "icon": "/images/javascript.webp",
     "color": {
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "React",
-    "level": 50,
+    "level": 60,
     "category": "Frontend",
     "icon": "/images/react.png",
     "color": {
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "Git/GitHub",
-    "level": 50,
+    "level": 60,
     "category": "Tools",
     "icon": "/images/Github.png",
     "color": {
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Responsive Design",
-    "level": 65,
+    "level": 75,
     "category": "Frontend",
     "icon": "/images/responsive.png",
     "color": {
@@ -98,7 +98,7 @@
   {
     "id": 9,
     "name": "node.js",
-    "level": 60,
+    "level": 70,
     "category": "Backend",
     "icon": "/images/nodejs.webp",
     "color": {
